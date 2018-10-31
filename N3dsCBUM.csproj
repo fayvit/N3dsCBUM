@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE3D75EE-D5F6-D30E-00B5-E7BDE3847F92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>N3DS:35</UnityBuildTarget>
+    <UnityVersion>5.6.6f2</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_6;UNITY_5_6;UNITY_5;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WWW;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_N3DS;UNITY_N3DS_API;ENABLE_AUDIO;ENABLE_CLOTH;ENABLE_MICROPHONE;MIC_NOT_SUPPORTED_BY_FMOD;ENABLE_PLATFORMSOCKETS;SUPPORT_THREADS;ENABLE_NETWORK;ENABLE_UNET;ENABLE_WEBCAM;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_6;UNITY_5_6;UNITY_5;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WWW;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_N3DS;UNITY_N3DS_API;ENABLE_AUDIO;ENABLE_CLOTH;ENABLE_MICROPHONE;MIC_NOT_SUPPORTED_BY_FMOD;ENABLE_PLATFORMSOCKETS;SUPPORT_THREADS;ENABLE_NETWORK;ENABLE_UNET;ENABLE_WEBCAM;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/PlaybackEngines/N3DS/Tools/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/UnityNew3DS_1_3_2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N3dsCBUM.Plugins.csproj">
+      <Project>{1F710A41-7E28-1623-EDAA-ED4415247A11}</Project>
+      <Name>N3dsCBUM.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="N3dsCBUM.Plugins.unityproj">
+      <Project>{1F710A41-7E28-1623-EDAA-ED4415247A11}</Project>
+      <Name>N3dsCBUM.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Animacoes\eletricidade\LightningBolt.cs" />
+    <Compile Include="Assets\Animacoes\eletricidade\Perlin.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\AuxiliarDeInstancia.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\BuscadorDeID.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\ButtonsFindTools.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\BytesTransform.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\ControleDosOlhos.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\EmparedarCamera.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\FindEnemies.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\PhotonReInstantiate.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\PosicaoRelativaDacamera.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\PosicionadorDoFocoDaCamera.cs" />
+    <Compile Include="Assets\Scripts CBUM\Auxiliares\RPC_Listener.cs" />
+    <Compile Include="Assets\Scripts CBUM\Conversas\NpcComConversa\BancoDeTextos.cs" />
+    <Compile Include="Assets\Scripts CBUM\Conversas\NpcComConversa\ListasDeTextos\ListaDeTextosPT_BR.cs" />
+    <Compile Include="Assets\Scripts CBUM\Conversas\NpcComConversa\NPCcomOpcoesDeConversa.cs" />
+    <Compile Include="Assets\Scripts CBUM\Conversas\NpcComConversa\NPCdeConversa.cs" />
+    <Compile Include="Assets\Scripts CBUM\Conversas\TalkTriggerManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\AnimaDeImpacto.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\ColisorDeDano.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\ColisorDePoder.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\ColisorDeProjetil.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\ColisorDoCirculoPsiquico.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\Dano.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\EstouEmDano.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\IDestructible.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\IGolpeBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\MagicBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\Dano\PedrasDestrutiveisIniciais.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\AddEnemyInManagerEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\CharacterDamageEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\CreatedRoomEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\DestructibleColliderContactEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\EnemyDamageEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\EventAgregator.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\IGameEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\JoinRoomButtonClickedEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\JoinedRoomEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\StandardGameEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\StandardSendIntAndStringEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\StandardSendIntEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\Eventos\StandardSendStringEvent.cs" />
+    <Compile Include="Assets\Scripts CBUM\FinalizouChefe.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\ContainerDePaineis.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\CreateRoomManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\DisparaTextos.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\GerenciadorDasOpcoesIniciais.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\HUDManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\HudContainer.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\InputNomeParaEntrarNaSala.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\ListRoomsManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\LoadBar.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\LocalPlayerInGame.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\MenuBasico.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\MultiplayerRoomOption.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\OlheParaCamera.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\OpenMultiplayerHudManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\PainelJogadorEmRedeAguardando.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\PainelTentandoCarregar.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\ParentearNaHUD.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\RedimensionarUI.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\RoomsListPanel.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\SloteMultiplayer.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\UiDeOpcoes.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\UmaOpcao.cs" />
+    <Compile Include="Assets\Scripts CBUM\HUD\UmaOpcaoDeMenu.cs" />
+    <Compile Include="Assets\Scripts CBUM\MapaPorScript.cs" />
+    <Compile Include="Assets\Scripts CBUM\PropsPorScript.cs" />
+    <Compile Include="Assets\Scripts CBUM\RetaDelimitadora.cs" />
+    <Compile Include="Assets\Scripts CBUM\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts CBUM\animacoes\AnimaBehaviour.cs" />
+    <Compile Include="Assets\Scripts CBUM\animacoes\AnimacaoDeSpriteParaUI.cs" />
+    <Compile Include="Assets\Scripts CBUM\animacoes\FadeView.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\AirAttackEnemy.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\AirAttackManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\AnimadorHumano.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\AplicadorDeCamera.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\AtackManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\AttackBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\BotoesDeTeste.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\CameraBasica.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\CharacterBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\CharacterManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\CommandReader.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\ControlledMoveForCharacter.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\ElementosDoDeslocamentoControlado.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\ElementosDoJogo.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\FinalizadorDaBarreiraSpawner.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\GameController.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\GlobalController.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\MagicAttackManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\MovimentacaoBasica.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\MusicaDeFundo.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\MusicaDeFundo_ADV.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\Pulo.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\RollManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\controladores\SpawnerDeInimigos.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Coletavel.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\DadosDoPersonagem.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\CirculoPsiquico.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\GarraImediata.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\GolpeEspecialDoFelixcat.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\GolpeRefinadoBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\ImpactBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\ImpactoRefinadoBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\ImpulsoVelozDoChefe.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\Jab.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\ProjetilDeAgua.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\ProjetilDeGosma.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\ProjetilRefinedBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\SocoDireto.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\SocoGiratorio.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\SpecialColorListener.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\Tapa.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Golpes\WaterMagic.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\BossEnemy.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\BossEnemyIA.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\BossTrigger.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyAirAttack.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyBasic.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyIaAirAttack.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyIaBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyIaBasic.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyIaIruin.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyIaRefinedAttackBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyIaXuash.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyIruin.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyRefinedBase.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\EnemyXuash.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\RefinedAttackManager.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\SpawnarMais.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\TriggerDisparaInimigos.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\TriggerDoSpawnner.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\Inimigos\VisualizacaoDoInimigoSpawnando.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\ItemMana.cs" />
+    <Compile Include="Assets\Scripts CBUM\dados\ItemVida.cs" />
+    <Compile Include="Assets\Scripts CBUM\listNames\PrefabListName.cs" />
+    <Compile Include="Assets\Scripts CBUM\testeLoadLevelPUN\Lobby.cs" />
+    <Compile Include="Assets\Scripttestador.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\Photon3Unity3D.xml" />
+    <None Include="Assets\Plugins\release_history.txt" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
